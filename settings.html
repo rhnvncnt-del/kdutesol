@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TESOL KDU - Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+     <header class="modern-header">
+        <div class="header-container">
+            <div class="logo-box">
+                <img src="images/photo.png" alt="TESOL KDU Logo">
+            </div>
+            <nav class="modern-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                     <li>
+        <a href="#">More ▾</a>
+        <ul class="dropdown">
+          <li><a href="#">Language Camps</a></li>
+          <li><a href="#">Materials</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">News and Events</a></li>
+          <li><a href="#">Publications</a></li>
+          <li><a href="#">Past Students</a></li>
+        </ul>
+      </li>
+                </ul>
+            </nav>
+            <a href="settings.html" class="settings-btn">Settings</a>
+            <!-- Dark mode toggle -->
+            <button id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+                🌙
+            </button>
+        </div>
+    </header>
+    <main class="settings-main">
+        <section class="settings-section">
+            <h2>Settings</h2>
+            <form class="settings-form">
+                <div class="form-card">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Your username">
+                </div>
+                <div class="form-card">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email">
+                </div>
+                <div class="form-card">
+                    <label for="theme">Theme:</label>
+                    <select id="theme" name="theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                </div>
+                <div class="form-card">
+                    <label for="notifications">Notifications:</label>
+                    <input type="checkbox" id="notifications" name="notifications"> Enable notifications
+                </div>
+                <button type="submit" class="settings-submit-btn">Save Settings</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-social">
+            <a href="YOUR_FACEBOOK_LINK" target="_blank" aria-label="Facebook">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="#4267B2"><path d="M22.675 0h-21.35c-.731 0-1.325.594-1.325 1.326v21.348c0 .73.594 1.326 1.325 1.326h11.495v-9.294h-3.125v-3.622h3.125v-2.672c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.097 2.797.141v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.315h3.587l-.467 3.622h-3.12v9.294h6.116c.73 0 1.324-.596 1.324-1.326v-21.349c0-.731-.594-1.325-1.324-1.325z"/></svg>
+            </a>
+            <a href="YOUR_X_LINK" target="_blank" aria-label="X">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="#222"><path d="M17.53 6.471h3.472l-7.446 7.709 7.446 7.768h-3.44l-5.276-5.505-5.493 5.505h-3.485l7.823-8.014-7.823-8.053h3.455l5.354 5.564zm-2.432 7.709 1.077 1.126 6.076-6.302h-2.275zm-2.333-2.486-1.159-1.207-6.036 6.302h2.287zm.55.569-1.502 1.537 5.247 5.471h2.306zm-.043-.045-5.18-5.398h-2.288l6.154 6.254zm2.41-2.462 1.449-1.5-5.266-5.391h-2.315z"/></svg>
+            </a>
+            <a href="YOUR_INSTAGRAM_LINK" target="_blank" aria-label="Instagram">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="#E1306C"><path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.334 3.608 1.309.975.975 1.247 2.242 1.309 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.069 4.849c-.062 1.366-.334 2.633-1.309 3.608-.975.975-2.242 1.247-3.608 1.309-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.069c-1.366-.062-2.633-.334-3.608-1.309-.975-.975-1.247-2.242-1.309-3.608-.058-1.265-.069-1.645-.069-4.849s.012-3.584.069-4.849c.062-1.366.334-2.633 1.309-3.608.975-.975 2.242-1.247 3.608-1.309 1.265-.058 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.67.013-4.947.072-1.276.059-2.434.327-3.385 1.278-.951.951-1.219 2.109-1.278 3.385-.059 1.277-.072 1.688-.072 4.947s.013 3.67.072 4.947c.059 1.276.327 2.434 1.278 3.385.951.951 2.109 1.219 3.385 1.278 1.277.059 1.688.072 4.947.072s3.67-.013 4.947-.072c1.276-.059 2.434-.327 3.385-1.278.951-.951 1.219-2.109 1.278-3.385.059-1.277.072-1.688.072-4.947s-.013-3.67-.072-4.947c-.059-1.276-.327-2.434-1.278-3.385-.951-.951-2.109-1.219-3.385-1.278-1.277-.059-1.688-.072-4.947-.072zm0 5.838a6.163 6.163 0 1 0 0 12.325 6.163 6.163 0 0 0 0-12.325zm0 10.163a3.999 3.999 0 1 1 0-7.997 3.999 3.999 0 0 1 0 7.997zm7.2-10.163a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+            </a>
+            <a href="YOUR_YOUTUBE_LINK" target="_blank" aria-label="YouTube">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a2.649 2.649 0 0 0-1.865-1.872c-1.643-.442-8.233-.442-8.233-.442s-6.59 0-8.233.442a2.649 2.649 0 0 0-1.865 1.872c-.433 1.64-.433 5.07-.433 5.07s0 3.43.433 5.07a2.649 2.649 0 0 0 1.865 1.872c1.643.442 8.233.442 8.233.442s6.59 0 8.233-.442a2.649 2.649 0 0 0 1.865-1.872c.433-1.64.433-5.07.433-5.07s0-3.43-.433-5.07zm-13.498 8.814v-7l6 3.5-6 3.5z"/></svg>
+            </a>
+        </div>
+        <p>&copy; 2025 TESOL KDU. All rights reserved.</p>
+    </footer>
+    <!-- Dark mode JS -->
+    <script>
+    // Helper: Switch dark mode on select or button
+    function setTheme(theme) {
+        if (theme === "dark") {
+            document.body.classList.add("dark-mode");
+            localStorage.setItem("theme", "dark");
+            document.getElementById("theme").value = "dark";
+        } else {
+            document.body.classList.remove("dark-mode");
+            localStorage.setItem("theme", "light");
+            document.getElementById("theme").value = "light";
+        }
+    }
+    // On page load, set mode
+    document.addEventListener("DOMContentLoaded", function() {
+        const savedTheme = localStorage.getItem("theme") || "light";
+        setTheme(savedTheme);
+
+        // Dropdown select change
+        document.getElementById("theme").addEventListener("change", function(e) {
+            setTheme(e.target.value);
+        });
+
+        // Moon button toggle
+        document.getElementById("darkModeToggle").addEventListener("click", function() {
+            const isDark = document.body.classList.contains("dark-mode");
+            setTheme(isDark ? "light" : "dark");
+        });
+    });
+    </script>
+</body>
+</html>
