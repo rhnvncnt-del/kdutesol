@@ -50,7 +50,7 @@ ul {
 }
 .settings-btn:hover {
     background: #074b8a;
-    color: #ffd700;
+    color: #B57EDC;
 }
 
 .modern-nav ul {
@@ -70,7 +70,7 @@ ul {
     transition: background 0.2s;
 }
 .nav-link.active, .nav-link:hover {
-    background: #ffd700;
+    background: #B57EDC;
     color: #074b8a;
 }
 ./* Basic page setup */
@@ -1458,3 +1458,4 @@ body.dark-mode .resource-card a {
     color: #ffd700 !important;
 
 }
+
