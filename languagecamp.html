@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language Camps Gallery | TESOL KDU</title>
+    <title>Language Camp - Gallery</title>
     <link rel="stylesheet" href="languagecamp.css">
+	<link rel="stylesheet" href="deco.css">
     <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Fixed Modern Header -->
     <header class="modern-header">
         <div class="header-container">
             <div class="logo-box">
@@ -15,28 +17,28 @@
             </div>
             <nav class="modern-nav">
                 <ul>
-                    <li><a href="webtesol.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    
-                </ul>
-				<li>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li>
                         <a href="#">More ▾</a>
                         <ul class="dropdown">
-                            <li><a href="languagecamp.html">Language Camps</a></li>
-                            <li><a href="materials.html">Materials</a></li>
-                            <li><a href="resources.html">Resources</a></li>
-                            <li><a href="news.html">News and Events</a></li>
-                            <li><a href="pub.html">Publications</a></li>
-                            <li><a href="past.html">Past Students</a></li>
+                            <li><a href="#">Language Camps</a></li>
+                            <li><a href="#">Materials</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">News and Events</a></li>
+                            <li><a href="#">Publications</a></li>
+                            <li><a href="#">Past Students</a></li>
                         </ul>
                     </li>
+                </ul>
             </nav>
+            <a href="settings.html" class="settings-btn">Settings</a>
+            <button id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
         </div>
     </header>
-
     <main>
         <section class="gallery-hero">
             <h1>Language Camps Gallery</h1>
@@ -100,4 +102,5 @@
         </div>
     </footer>
 </body>
+
 </html>
