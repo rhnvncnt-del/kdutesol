@@ -38,7 +38,7 @@ ul {
     box-shadow: 0 1px 8px rgba(0,0,0,0.08);
 }
 .settings-btn {
-    background: #ffd700;
+    background: #B57EDC;
     color: #074b8a;
     padding: 8px 22px;
     border-radius: 30px;
@@ -1456,4 +1456,5 @@ body.dark-mode .resource-card h3 {
 }
 body.dark-mode .resource-card a {
     color: #ffd700 !important;
+
 }
