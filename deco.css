@@ -39,7 +39,7 @@ ul {
     box-shadow: 0 1px 8px rgba(0,0,0,0.08);
 }
 .settings-btn {
-    background: #074b8a;
+    background: #ff8800;
     color: #fff;
     padding: 8px 22px;
     border-radius: 30px;
@@ -50,8 +50,8 @@ ul {
     border: none;
 }
 .settings-btn:hover {
-    background: #222a42;
-    color: #B57EDC;
+    background: #c95c00;
+    color: #fff;
 }
 
 /* NAVIGATION */
@@ -72,8 +72,8 @@ ul {
     transition: background 0.2s, color 0.2s;
 }
 .nav-link.active, .nav-link:hover {
-    background: #074b8a;
-    color: #B57EDC;
+    background: #ff8800;
+    color: #fff;
 }
 
 /* Dropdown */
@@ -123,10 +123,10 @@ nav ul li .dropdown li:last-child a {
 }
 nav ul li .dropdown li a:hover, 
 nav ul li .dropdown li a:focus {
-    background: #074b8a;
+    background: #ff8800;
     color: #fff;
     padding-left: 32px;
-    box-shadow: 0 2px 14px #074b8a33;
+    box-shadow: 0 2px 14px #ff880033;
 }
 @media (max-width: 600px) {
     nav ul li .dropdown {
@@ -163,7 +163,7 @@ nav ul li .dropdown li a:focus {
 .banner-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(90deg, #074b8a 60%, #B57EDC 100%);
+    background: linear-gradient(90deg, #074b8a 60%, #ff8800 100%);
     opacity: .35;
     border-radius: 0 0 28px 28px;
     pointer-events: none;
@@ -182,7 +182,7 @@ nav ul li .dropdown li a:focus {
 }
 .slide-caption h1 {
     font-size: 2.2rem;
-    color: #074b8a;
+    color: #ff8800;
     margin-bottom: 16px;
 }
 .slide-caption p {
@@ -209,27 +209,27 @@ input[type="reset"],
     outline: none;
 }
 .primary-btn {
-    background: #074b8a;
+    background: #ff8800;
     color: #fff;
-    border: 2px solid #074b8a;
+    border: 2px solid #ff8800;
 }
 .primary-btn:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover {
-    background: #222a42;
-    color: #B57EDC;
-    border-color: #222a42;
+    background: #c95c00;
+    color: #fff;
+    border-color: #c95c00;
 }
 .secondary-btn {
-    background: #B57EDC;
-    color: #074b8a;
-    border: 2px solid #074b8a;
+    background: #fff;
+    color: #ff8800;
+    border: 2px solid #ff8800;
 }
 .secondary-btn:hover {
-    background: #074b8a;
+    background: #ff8800;
     color: #fff;
-    border-color: #074b8a;
+    border-color: #ff8800;
 }
 
 /* --- Modern Info Cards --- */
@@ -296,7 +296,7 @@ input[type="reset"]:hover {
 .youtube-card:hover {
     transform: translateY(-8px) scale(1.025);
     box-shadow: 0 12px 40px rgba(0,0,0,0.14);
-    border-color: #074b8a;
+    border-color: #ff8800;
 }
 .youtube-thumb {
     width: 100%;
@@ -375,7 +375,7 @@ input[type="reset"]:hover {
     pointer-events: auto;
     cursor: pointer;
     font-size: 2rem;
-    background: #074b8a;
+    background: #ff8800;
     color: #fff;
     padding: 18px;
     border-radius: 50%;
@@ -383,12 +383,12 @@ input[type="reset"]:hover {
     margin: 0 24px;
     align-self: center;
     user-select: none;
-    border: 2px solid #074b8a;
+    border: 2px solid #ff8800;
 }
 .slider-arrow:hover {
-    background: #222a42;
-    color: #B57EDC;
-    border-color: #222a42;
+    background: #c95c00;
+    color: #fff;
+    border-color: #c95c00;
 }
 @media (max-width: 900px) {
     .banner-img { max-height: 220px; }
@@ -453,7 +453,7 @@ input[type="reset"]:hover {
     font-weight: 500;
 }
 .about-card a:hover {
-    color: #B57EDC;
+    color: #ff8800;
 }
 
 /* CONTACT US CARD AND FORM BUTTON */
@@ -511,7 +511,7 @@ input[type="reset"]:hover {
     transition: border 0.18s;
 }
 .contact-row input:focus {
-    border-color: #074b8a;
+    border-color: #ff8800;
     outline: none;
 }
 .contact-form label[for="message"] {
@@ -532,12 +532,12 @@ input[type="reset"]:hover {
     margin-bottom: 4px;
 }
 .contact-form textarea:focus {
-    border-color: #074b8a;
+    border-color: #ff8800;
     outline: none;
 }
 .contact-form button {
     align-self: flex-end;
-    background: #074b8a;
+    background: #ff8800;
     color: #fff;
     padding: 10px 26px;
     border-radius: 7px;
@@ -546,14 +546,14 @@ input[type="reset"]:hover {
     letter-spacing: 1px;
     cursor: pointer;
     box-shadow: 0 2px 10px rgba(7,75,138,0.08);
-    border: 2px solid #074b8a;
+    border: 2px solid #ff8800;
     transition: background 0.2s, color 0.2s;
     margin-top: 6px;
 }
 .contact-form button:hover {
-    background: #222a42;
-    color: #B57EDC;
-    border-color: #222a42;
+    background: #c95c00;
+    color: #fff;
+    border-color: #c95c00;
 }
 @media (max-width: 500px) {
     .contact-card { max-width: 98vw; padding: 16px 4vw; }
@@ -677,8 +677,8 @@ input[type="reset"]:hover {
 
 /* Call to Action Section */
 .cta {
-    background: #B57EDC;
-    color: #074b8a;
+    background: #ff8800;
+    color: #fff;
     padding: 34px 0 30px 0;
     text-align: center;
     margin-bottom: 22px;
@@ -777,7 +777,7 @@ input[type="reset"]:hover {
 }
 .footer-social-row a:hover {
     transform: scale(1.18);
-    filter: drop-shadow(0 0 6px #074b8a);
+    filter: drop-shadow(0 0 6px #ff8800);
 }
 .footer-copyright {
     margin-top: 18px;
@@ -824,7 +824,7 @@ input[type="reset"]:hover {
 .course-banner .banner-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(90deg, #074b8a 80%, #B57EDC 100%);
+    background: linear-gradient(90deg, #074b8a 80%, #ff8800 100%);
     opacity: .21;
     pointer-events: none;
     border-radius: 0 0 28px 28px;
@@ -844,7 +844,7 @@ input[type="reset"]:hover {
 }
 .course-banner .slide-caption h1 {
     font-size: 2.3rem;
-    color: #074b8a;
+    color: #ff8800;
     margin-bottom: 14px;
     font-weight: 700;
 }
@@ -1042,7 +1042,7 @@ input[type="reset"]:hover {
     font-weight: 500;
 }
 .resource-card a:hover {
-    color: #B57EDC;
+    color: #ff8800;
 }
 
 @media (max-width: 900px) {
@@ -1083,41 +1083,41 @@ body.dark-mode {
 }
 body.dark-mode .modern-header {
     background: #23234a;
-    color: #B57EDC;
+    color: #ff8800;
 }
 body.dark-mode .settings-btn,
 body.dark-mode .nav-link,
 body.dark-mode .dropbtn {
     background: #23234a;
-    color: #B57EDC;
+    color: #ff8800;
 }
 body.dark-mode .nav-link.active,
 body.dark-mode .nav-link:hover,
 body.dark-mode .dropbtn:hover {
     color: #23234a;
-    background: #B57EDC;
+    background: #ff8800;
 }
 body.dark-mode .dropdown {
     background: #23234a;
-    color: #B57EDC;
+    color: #ff8800;
 }
 body.dark-mode .dropdown li a {
-    color: #B57EDC;
+    color: #ff8800;
     background: #23234a;
 }
 body.dark-mode .dropdown li a:hover {
-    background: #B57EDC;
+    background: #ff8800;
     color: #23234a;
 }
 body.dark-mode .about-card,
 body.dark-mode .contact-card {
     background: #23234a;
-    color: #B57EDC;
+    color: #ff8800;
     box-shadow: 0 4px 28px #181820;
 }
 body.dark-mode footer {
     background: #23234a;
-    color: #B57EDC;
+    color: #ff8800;
 }
 body.dark-mode .primary-btn,
 body.dark-mode .secondary-btn,
@@ -1125,9 +1125,9 @@ body.dark-mode button,
 body.dark-mode input[type="submit"],
 body.dark-mode input[type="button"],
 body.dark-mode input[type="reset"] {
-    background: #B57EDC;
-    color: #23234a;
-    border-color: #B57EDC;
+    background: #ff8800;
+    color: #181820;
+    border-color: #ff8800;
 }
 body.dark-mode .primary-btn:hover,
 body.dark-mode .secondary-btn:hover,
@@ -1135,9 +1135,9 @@ body.dark-mode button:hover,
 body.dark-mode input[type="submit"]:hover,
 body.dark-mode input[type="button"]:hover,
 body.dark-mode input[type="reset"]:hover {
-    background: #23234a;
-    color: #B57EDC;
-    border-color: #23234a;
+    background: #c95c00;
+    color: #fff;
+    border-color: #c95c00;
 }
 #darkModeToggle {
     color: #074b8a;
