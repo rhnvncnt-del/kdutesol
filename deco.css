@@ -1231,4 +1231,293 @@ body.dark-mode #darkModeToggle {
     box-shadow: 0 2px 16px rgba(7,75,138,0.10);
 }
 
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f8fa;
+    color: #222;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* HEADER */
+.modern-header {
+    background: #074b8a;
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+.logo-box img {
+    height: 48px;
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+}
+.settings-btn {
+    background: #ff8800;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s, color 0.2s;
+    font-size: 1rem;
+    border: none;
+}
+.settings-btn:hover {
+    background: #c95c00;
+    color: #fff;
+}
+
+/* NAVIGATION */
+.modern-nav ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-link {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-link.active, .nav-link:hover {
+    background: #ff8800;
+    color: #fff;
+}
+
+/* Dropdown */
+nav ul li {
+    position: relative;
+}
+nav ul li .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    min-width: 220px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(7,75,138,0.14);
+    border-radius: 14px;
+    overflow: hidden;
+    z-index: 10;
+    padding: 8px 0;
+    animation: dropdownFade .28s;
+}
+@keyframes dropdownFade {
+    from { opacity: 0; transform: translateY(-12px);}
+    to { opacity: 1; transform: none;}
+}
+nav ul li:hover .dropdown,
+nav ul li:focus-within .dropdown {
+    display: block;
+}
+nav ul li .dropdown li {
+    width: 100%;
+}
+nav ul li .dropdown li a {
+    display: block;
+    padding: 14px 24px;
+    color: #074b8a;
+    background: #fff;
+    font-weight: 600;
+    font-size: 1.07rem;
+    border: none;
+    border-bottom: 1px solid #e3e8ee;
+    transition: background 0.18s, color 0.18s, padding 0.18s;
+    text-align: left;
+    letter-spacing: 0.2px;
+}
+nav ul li .dropdown li:last-child a {
+    border-bottom: none;
+}
+nav ul li .dropdown li a:hover, 
+nav ul li .dropdown li a:focus {
+    background: #ff8800;
+    color: #fff;
+    padding-left: 32px;
+    box-shadow: 0 2px 14px #ff880033;
+}
+@media (max-width: 600px) {
+    nav ul li .dropdown {
+        min-width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    nav ul li .dropdown li a {
+        padding: 12px 20px;
+    }
+}
+
+/* --- Publications Gallery --- */
+.gallery-hero {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 28px rgba(7,75,138,0.09);
+    max-width: 900px;
+    margin: 40px auto 30px auto;
+    padding: 32px 28px;
+    text-align: center;
+}
+
+.modern-gallery {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 28px rgba(7,75,138,0.09);
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 32px 28px;
+}
+.modern-gallery h2 {
+    color: #074b8a;
+    font-size: 1.35rem;
+    margin-bottom: 22px;
+    font-weight: 700;
+    text-align: left;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 28px;
+    margin-bottom: 10px;
+}
+.gallery-item {
+    position: relative;
+    background: #f7fbff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(7,75,138,0.07);
+    overflow: hidden;
+    transition: box-shadow .16s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 12px;
+}
+.gallery-item:hover {
+    box-shadow: 0 6px 22px rgba(7,75,138,0.14);
+}
+.gallery-img {
+    width: 60px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(7,75,138,0.08);
+    margin-bottom: 12px;
+}
+.gallery-caption {
+    padding: 8px 0;
+    text-align: center;
+    font-size: 1.03rem;
+    color: #074b8a;
+    font-weight: 600;
+    width: 100%;
+}
+.gallery-item a {
+    color: #074b8a;
+    text-decoration: none;
+    font-weight: 500;
+}
+.gallery-item a:hover .gallery-caption {
+    color: #ff8800;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+    .gallery-hero, .modern-gallery { padding: 16px 8px; }
+    .gallery-grid { gap: 14px; }
+}
+@media (max-width: 600px) {
+    .gallery-img { max-width: 48px; height: 64px; }
+    .gallery-item { padding: 13px 2px; }
+    .gallery-hero, .modern-gallery { padding: 8px 2px; }
+}
+
+/* --- Dark Mode --- */
+body.dark-mode {
+    background: #181820;
+    color: #f5f5f5;
+}
+body.dark-mode .modern-header {
+    background: #23234a;
+    color: #ff8800;
+}
+body.dark-mode .settings-btn,
+body.dark-mode .nav-link,
+body.dark-mode .dropbtn {
+    background: #23234a;
+    color: #ff8800;
+}
+body.dark-mode .nav-link.active,
+body.dark-mode .nav-link:hover,
+body.dark-mode .dropbtn:hover {
+    color: #23234a;
+    background: #ff8800;
+}
+body.dark-mode .dropdown {
+    background: #23234a;
+    color: #ff8800;
+}
+body.dark-mode .dropdown li a {
+    color: #ff8800;
+    background: #23234a;
+}
+body.dark-mode .dropdown li a:hover {
+    background: #ff8800;
+    color: #23234a;
+}
+body.dark-mode .gallery-hero,
+body.dark-mode .modern-gallery,
+body.dark-mode .gallery-item {
+    background: #23234a;
+    color: #ff8800;
+    box-shadow: 0 4px 28px #181820;
+}
+body.dark-mode .gallery-caption {
+    color: #ff8800 !important;
+}
+body.dark-mode footer {
+    background: #23234a;
+    color: #ff8800;
+}
+body.dark-mode .gallery-item a:hover .gallery-caption {
+    color: #fff;
+}
+
+#darkModeToggle {
+    color: #074b8a;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: color 0.2s;
+}
+body.dark-mode #darkModeToggle {
+    color: #fff;
+}
+
 
