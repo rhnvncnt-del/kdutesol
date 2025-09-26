@@ -1221,3 +1221,14 @@ body.dark-mode #darkModeToggle {
     .facts-list { flex-direction: column; gap: 8px; }
 }
 
+.video-intro img {
+    display: block;
+    max-width: 340px;
+    width: 90%;
+    height: auto;
+    margin: 24px auto 0 auto;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(7,75,138,0.10);
+}
+
+
